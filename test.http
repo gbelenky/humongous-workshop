@@ -1,0 +1,32 @@
+http://localhost:7071/api/GetHealthCheck HTTP/1.1
+Accept: application/json
+
+###
+http://localhost:7071/api/GetHealthCheck?patientId=4711 HTTP/1.1
+Accept: application/json
+
+###
+http://localhost:7071/api/GetHealthCheck?submissionId=9902 HTTP/1.1
+Accept: application/json
+
+###
+http://localhost:7071/api/GetHealthCheck?submissionId=9902&patientId=4711 HTTP/1.1
+Accept: application/json
+
+
+###
+POST http://localhost:7071/api/CreateHeathCheck HTTP/1.1
+Accept: application/json
+
+{
+  "patientId": "4711",
+  "healthStatus": "Good",
+  "symptoms": [
+    "well",
+    "unwell",
+    "coughing",
+    "sneezing",
+    "fever",
+    "headache"
+  ],
+}
