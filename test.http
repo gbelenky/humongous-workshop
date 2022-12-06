@@ -30,3 +30,12 @@ Accept: application/json
     "headache"
   ],
 }
+
+###
+GET http://localhost:7071/api/GetHealthCheckBySubmission/24173592-a7bd-4c3e-bfce-c3ddeaecd79d
+Accept: application/json
+
+
+###
+GET http://localhost:7071/api/GetHealthCheckByPatient/4711
+Accept: application/json
